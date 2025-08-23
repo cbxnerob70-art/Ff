@@ -1,0 +1,112 @@
+# Priyansh.js
+
+priyansh.newVersionDetected=You are currently using version %1. The latest version is %2. Please update to improve performance. To update, type: node update
+priyansh.errorFormat=Invalid module format.
+priyansh.nameExist=A module with this name already exists.
+priyansh.notFoundLanguage=Module %1 does not support your language.
+priyansh.notFoundPackage=Required package %1 for module %2 not found. Installing...
+priyansh.cantInstallPackage=Failed to install package %1 for module %2. Error: %3
+priyansh.loadedPackage=Successfully installed all packages for module %1.
+priyansh.loadedConfig=Successfully loaded configuration for module %1.
+priyansh.cantLoadConfig=Failed to load configuration for module %1. Error: %2
+priyansh.cantOnload=Failed to run setup for module %1. Error: %1
+priyansh.successLoadModule=Module %1 installed successfully.
+priyansh.failLoadModule=Failed to install module %1. Error: %2
+priyansh.finishLoadModule=Loaded %1 module commands and %2 module events successfully.
+priyansh.foundPathAppstate=Appstate file found. Logging in...
+priyansh.notFoundPathAppstate=Appstate file not found or is malformed.
+priyansh.checkListGban=Checking global ban list...
+priyansh.banDevice=Your device is banned from this project. Please contact NM Nerob at https://fb.me/NMNerob for more information or to request an unban key. If you already have a key, enter it below.
+priyansh.keyNotSameFormat=Invalid code format. The code must contain 6 digits.
+priyansh.codeInputExpired=Invalid or expired code.
+priyansh.unbanDeviceSuccess=Your device has been unbanned. Please restart to continue.
+priyansh.userBanned=You were banned from the project on %1 for the following reason: %2. Please contact NM Nerob at https://fb.me/NMNerob for more info.
+priyansh.finishCheckListGban=Global ban list check completed.
+priyansh.handleListenError=An unexpected error occurred in handleListen: %1
+priyansh.warningSourceCode=WARNING: Source code structure has been altered. Terminating...
+priyansh.refreshListen=handleListen has been refreshed.
+priyansh.successConnectDatabase=Connected to the database successfully!
+priyansh.failConnectDatabase=Failed to connect to the database. Error: %1
+
+# includes/listen.js
+
+listen.startLoadEnvironment=Loading environment variables...
+listen.loadedEnvironmentThread=Thread environment variables loaded successfully.
+listen.loadedEnvironmentUser=User environment variables loaded successfully.
+listen.successLoadEnvironment=Environment variables loaded successfully.
+listen.failLoadEnvironment=Failed to load environment variables. Error: %1
+
+# includes/controller/currencies.js
+
+currencies.needObjectOrArray=Expected an Array or Object.
+currencies.needObject=Expected an Object.
+currencies.needNumber=Expected a number.
+
+# includes/controller/threads.js
+
+threads.needObjectOrArray=Expected an Array or Object.
+threads.needObject=Expected an Object.
+
+# includes/controller/users.js
+
+users.needObjectOrArray=Expected an Array or Object.
+users.needObject=Expected an Object.
+
+# includes/handle/handleCommand.js
+
+handleCommand.userBanned=⛔ You are currently banned.\n%1\n%2\nPlease contact the bot owner NM Nerob for unbanning.
+handleCommand.threadBanned=⛔ This group has been banned.\n%1\n%2\nPlease contact NM Nerob to request unbanning.
+handleCommand.commandNotExist=Unknown command "%1". Please check the command and try again.
+handleCommand.commandThreadBanned=This thread is not allowed to use the command "%1".
+handleCommand.commandUserBanned=You are not allowed to use the command "%1".
+handleCommand.threadNotAllowNSFW=NSFW commands are not allowed in this thread.
+handleCommand.cantGetInfoThread=Unable to retrieve thread information. Error: %1
+handleCommand.permssionNotEnough=📑 This command is restricted to the bot owner only. Access denied: "%1"
+handleCommand.cantSetMessageReaction=Failed to set message reaction. Error: %1
+handleCommand.executeCommand=[%1] Command executed: %2 by user: %3 in thread: %4 | Args: %5 | Time taken: %6ms
+handleCommand.commandError=An error occurred while executing command %1. Error: %2
+
+# includes/handle/handleCommandEvent.js
+
+handleCommandEvent.moduleError=An error occurred while executing command %1. Error: %2
+
+# includes/handle/handleCreateDatabase.js
+
+handleCreateDatabase.newThread=New thread created: %1
+handleCreateDatabase.newUser=New user created: %1
+
+# includes/handle/handleEvent.js
+
+handleEvent.executeEvent=[%1] Event executed: %2 in thread: %3 | Time taken: %4ms
+handleEvent.eventError=Error executing event %1. Error: %12
+
+# includes/handle/handleReaction.js
+
+handleReaction.missingValue=Missing value required to process your request.
+handleReaction.executeError=An error occurred while processing your reaction. Error: %1
+
+# includes/handle/handleReply.js
+
+handleReply.missingValue=Missing value required to process your reply.
+handleReply.executeError=An error occurred while processing your reply. Error: %1
+
+# includes/handle/handleSchedule.js
+
+handleSchedule.exectuteError=An error occurred while executing schedule in module %1. Error: %2
+
+# utils/index.js
+
+utils.throwError=ℹ️ This command is not working. Try another one. Use %1help %2 for assistance. ℹ️
+
+# updater.js
+
+updater.latestVersion=You are using the latest version.
+updater.cantFindVersion=Your version (%1) is undefined. Please check your package.json file.
+updater.newVersions=%1 new updates available. Starting update...
+updater.updateSuccess=Update completed successfully: %1
+updater.configChanged=Configuration file %1 has changed. Please review config.json.
+updater.installingPackages=Installing dependencies...
+updater.installSuccess=Dependencies installed successfully. Please restart the bot to apply changes.
+updater.backupSuccess=Changed files have been backed up in the %1 folder.
+updater.restartToApply=Please restart the bot to apply the latest version.
+updater.skipFile=The file %1 has a newer version but was skipped due to comment: %2
